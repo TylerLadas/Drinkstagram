@@ -1,0 +1,19 @@
+{
+    "name": "Drinkstagram",
+    "short_name": "Drinks",
+    "description": "An app that allows you to search for different drink recipes.",
+    "icons": [
+        {
+          "src": "/img/icons/icons-192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "/img/icons/icons-512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ],
+    "background_color": "#01579b",
+    "theme_color": "#ffffff"
+}

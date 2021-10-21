@@ -18,11 +18,13 @@
   "devDependencies": {
     "babel-plugin-import-graphql": "^2.8.1",
     "concurrently": "^5.1.0",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^4.6.0"
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-pwa-manifest": "^4.3.0"
   },
   "dependencies": {
     "if-env": "^1.0.4",
     "jquery": "^3.6.0"
-  }
+  },
+  "packageManager": "yarn@3.0.2"
 }

@@ -21,7 +21,7 @@ const SearchDrinks = () => {
   const [saveDrink, { error }] = useMutation(SAVE_DRINK);
 
   // set up useEffect hook to save `savedDrinkIds` list to localStorage on component unmount
-  // learn more here: https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup
+ 
   useEffect(() => {
     return () => saveDrinkIds(savedDrinkIds);
   });
@@ -41,15 +41,76 @@ const SearchDrinks = () => {
         throw new Error('something went wrong!');
       }
 
-      const { items } = await response.json();
+      const { drinks } = await response.json();
 
-      const drinkData = items.map((drink) => ({
+      // remove null values
+
+      const drinkData = drinks.map((drink) => {
+
+        let ingredientsString = "";
+
+        if (drink.strIngredient1 && drink.strMeasure1) {
+          ingredientsString += drink.strMeasure1 + " " + drink.strIngredient1 + ", "
+        };
+        
+        if (drink.strIngredient2 && drink.strMeasure2) {
+          ingredientsString += drink.strMeasure2 + " " + drink.strIngredient2 + ", " 
+        }
+
+        if (drink.strIngredient3 && drink.strMeasure3) {
+          ingredientsString += drink.strMeasure3 + " " + drink.strIngredient3 + ", " 
+        }
+
+        if (drink.strIngredient4 && drink.strMeasure4) {
+          ingredientsString += drink.strMeasure4 + " " + drink.strIngredient4 + ", "
+        }
+
+        if (drink.strIngredient5 && drink.strMeasure5) {
+          ingredientsString += drink.strMeasure5 + " " + drink.strIngredient5 + ", "
+        }
+
+        if (drink.strIngredient6 && drink.strMeasure6) {
+          ingredientsString += drink.strMeasure6 + " " + drink.strIngredient6 + ", " 
+        }
+
+        if (drink.strIngredient7 && drink.strMeasure7) {
+          ingredientsString += drink.strMeasure7 + " " + drink.strIngredient7 + ", " 
+        }
+
+        if (drink.strIngredient8 && drink.strMeasure8) {
+          ingredientsString += drink.strMeasure8 + " " + drink.strIngredient8 + ", "
+        }
+
+        if (drink.strIngredient9 && drink.strMeasure9) {
+          ingredientsString += drink.strMeasure9 + " " + drink.strIngredient9 + ", "
+        }
+
+        if (drink.strIngredient10 && drink.strMeasure10) {
+          ingredientsString += drink.strMeasure10 + " " + drink.strIngredient10 + ", " 
+        }
+
+        ingredientsString = ingredientsString.slice(0, -2);
+
+        return ({
+
         drinkId: drink.idDrink,
         title: drink.strDrink,
-        ingredients: drink.volumeInfo.title,
+        ingredients: ingredientsString,
+
+                    //  drink.strMeasure1 + " " + drink.strIngredient1 + ", " +
+                    //  drink.strMeasure2 + " " + drink.strIngredient2 + ", " + 
+                    //  drink.strMeasure3 + " " + drink.strIngredient3 + ", " +
+                    //  drink.strMeasure4 + " " + drink.strIngredient4 + ", " +
+                    //  drink.strMeasure5 + " " + drink.strIngredient5 + ", " +
+                    //  drink.strMeasure6 + " " + drink.strIngredient6 + ", " +
+                    //  drink.strMeasure7 + " " + drink.strIngredient7 + ", " +
+                    //  drink.strMeasure8 + " " + drink.strIngredient8 + ", " +
+                    //  drink.strMeasure9 + " " + drink.strIngredient9 + ", " +
+                    //  drink.strMeasure10 + " " + drink.strIngredient10 || '',
+        
         instructions: drink.strInstructions,
         image: drink.strDrinkThumb || '',
-      }));
+      })});
 
       setSearchedDrinks(drinkData);
       setSearchInput('');
@@ -57,7 +118,7 @@ const SearchDrinks = () => {
       console.error(err);
     }
   };
-
+  
   // create function to handle saving a drink to our database
   const handleSaveDrink = async (drinkId) => {
     // find the drink in `searchedDrinks` state by the matching id
@@ -128,8 +189,8 @@ const SearchDrinks = () => {
                 ) : null}
                 <Card.Body>
                   <Card.Title>{drink.title}</Card.Title>
-                  <p className='small'>Authors: {drink.ingredients}</p>
-                  <Card.Text>{drink.instructions}</Card.Text>
+                  <p className='small'>Ingredients: {drink.ingredients}</p>
+                  <Card.Text>Instructions: {drink.instructions}</Card.Text>
                   {Auth.loggedIn() && (
                     <Button
                       disabled={savedDrinkIds?.some((savedDrinkId) => savedDrinkId === drink.drinkId)}

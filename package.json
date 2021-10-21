@@ -8,15 +8,21 @@
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "webpack": "webpack --watch",
+    "build:web": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "babel-plugin-import-graphql": "^2.8.1",
+    "concurrently": "^5.1.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.6.0"
   },
   "dependencies": {
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "jquery": "^3.6.0"
   }
 }

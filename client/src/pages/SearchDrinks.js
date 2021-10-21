@@ -89,6 +89,8 @@ const SearchDrinks = () => {
           ingredientsString += drink.strMeasure10 + " " + drink.strIngredient10 + ", " 
         }
 
+        ingredientsString = ingredientsString.slice(0, -2);
+
         return ({
 
         drinkId: drink.idDrink,

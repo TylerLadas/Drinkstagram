@@ -149,7 +149,7 @@ const SearchDrinks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-dark'>
+      <Jumbotron fluid className='text-light bg-dark jumbo'>
         <Container>
           <h1>Search for Drinks!</h1>
           <Form onSubmit={handleFormSubmit}>

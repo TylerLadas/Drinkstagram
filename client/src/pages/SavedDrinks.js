@@ -47,7 +47,7 @@ const SavedDrinks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-dark'>
+      <Jumbotron fluid className='text-light bg-dark jumbo'>
         <Container>
           <h1>Viewing saved drinks!</h1>
         </Container>

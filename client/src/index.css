@@ -12,8 +12,23 @@ code {
     monospace;
 }
 
+.nav  {
+  background-color: #93332f;
+}
+
 .jumbo {
   background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1557&q=80');
   background-position: center;
   background-size: cover;
+}
+
+.jumbo h1 {
+  color: black;
+}
+
+.searchBegin {
+  background-image: url("https://media4.giphy.com/media/iebqkcA0GBBjHFKROw/giphy.gif?cid=ecf05e47qmvroei70f2fpdtpm2pzlaimljjymxdb69aevh6a&rid=giphy.gif&ct=g") ;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
 }

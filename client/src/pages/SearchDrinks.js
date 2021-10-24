@@ -174,8 +174,8 @@ const SearchDrinks = () => {
         </Container>
       </Jumbotron>
 
-      <Container>
-        <h2>
+      <Container className='searchBegin'>
+        <h2 style={{color: 'white'}}>
           {searchedDrinks.length
             ? `Viewing ${searchedDrinks.length} results:`
             : 'Search for a drink to begin'}

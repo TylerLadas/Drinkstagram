@@ -47,13 +47,13 @@ const SavedDrinks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-dark'>
+      <Jumbotron fluid className='text-light bg-dark jumbo'>
         <Container>
           <h1>Viewing saved drinks!</h1>
         </Container>
       </Jumbotron>
-      <Container>
-        <h2>
+      <Container className="searchBegin">
+        <h2 style={{color: 'white'}}>
           {userData.savedDrinks.length
             ? `Viewing ${userData.savedDrinks.length} saved ${userData.savedDrinks.length === 1 ? 'drink' : 'drinks'}:`
             : 'You have no saved drinks!'}

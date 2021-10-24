@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.brand {
+  font-family: 'Just Another Hand';
+  font-size: xx-large;
+}
+
 .nav  {
   background-color: #93332f;
 }
@@ -24,6 +29,7 @@ code {
 
 .jumbo h1 {
   color: black;
+  text-shadow:white 1px 0 10px;
 }
 
 .searchBegin {
@@ -32,3 +38,18 @@ code {
   background-size: cover;
   border-radius: 25px;
 }
+
+.nav.nav-pills .nav-link.active {
+  background-color: #93332f;
+  border-radius: 25px;
+  color: white;
+}
+
+.nav.nav-pills .nav-link {
+  color: #93332f;
+}
+
+.nav.nav-pills {
+  background-color: white;
+}
+

@@ -14,8 +14,8 @@ const AppNavbar = () => {
     <>
       <Navbar className="nav" expand='lg'>
         <Container fluid>
-          <Navbar.Brand as={Link} to='/' style={{color: 'white'}}>
-            Drinkstagram
+          <Navbar.Brand className="brand" as={Link} to='/' style={{color: 'white'}}>
+          🍸Drinkstagram
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>

@@ -49,63 +49,93 @@ const SearchDrinks = () => {
 
         let ingredientsString = "";
 
-        if (drink.strIngredient1 && drink.strMeasure1) {
-          ingredientsString += drink.strMeasure1 + " " + drink.strIngredient1 + ", "
+        if (drink.strMeasure1) {
+          ingredientsString += drink.strMeasure1 + " "
         };
-        
-        if (drink.strIngredient2 && drink.strMeasure2) {
-          ingredientsString += drink.strMeasure2 + " " + drink.strIngredient2 + ", " 
+
+        if (drink.strIngredient1) {
+          ingredientsString += drink.strIngredient1 + ", "
         }
 
-        if (drink.strIngredient3 && drink.strMeasure3) {
-          ingredientsString += drink.strMeasure3 + " " + drink.strIngredient3 + ", " 
+        if (drink.strMeasure2) {
+          ingredientsString += drink.strMeasure2 + " "
+        };
+
+        if (drink.strIngredient2) {
+          ingredientsString += drink.strIngredient2 + ", "
         }
 
-        if (drink.strIngredient4 && drink.strMeasure4) {
-          ingredientsString += drink.strMeasure4 + " " + drink.strIngredient4 + ", "
+        if (drink.strMeasure3) {
+          ingredientsString += drink.strMeasure3 + " "
+        };
+
+        if (drink.strIngredient3) {
+          ingredientsString += drink.strIngredient3 + ", "
         }
 
-        if (drink.strIngredient5 && drink.strMeasure5) {
-          ingredientsString += drink.strMeasure5 + " " + drink.strIngredient5 + ", "
+        if (drink.strMeasure4) {
+          ingredientsString += drink.strMeasure4 + " "
+        };
+
+        if (drink.strIngredient4) {
+          ingredientsString += drink.strIngredient4 + ", "
         }
 
-        if (drink.strIngredient6 && drink.strMeasure6) {
-          ingredientsString += drink.strMeasure6 + " " + drink.strIngredient6 + ", " 
+        if (drink.strMeasure5) {
+          ingredientsString += drink.strMeasure5 + " "
+        };
+
+        if (drink.strIngredient5) {
+          ingredientsString += drink.strIngredient5 + ", "
         }
 
-        if (drink.strIngredient7 && drink.strMeasure7) {
-          ingredientsString += drink.strMeasure7 + " " + drink.strIngredient7 + ", " 
+        if (drink.strMeasure6) {
+          ingredientsString += drink.strMeasure6 + " "
+        };
+
+        if (drink.strIngredient6) {
+          ingredientsString += drink.strIngredient6 + ", "
         }
 
-        if (drink.strIngredient8 && drink.strMeasure8) {
-          ingredientsString += drink.strMeasure8 + " " + drink.strIngredient8 + ", "
+        if (drink.strMeasure7) {
+          ingredientsString += drink.strMeasure7 + " "
+        };
+
+        if (drink.strIngredient7) {
+          ingredientsString += drink.strIngredient7 + ", "
         }
 
-        if (drink.strIngredient9 && drink.strMeasure9) {
-          ingredientsString += drink.strMeasure9 + " " + drink.strIngredient9 + ", "
+        if (drink.strMeasure8) {
+          ingredientsString += drink.strMeasure8 + " "
+        };
+
+        if (drink.strIngredient8) {
+          ingredientsString += drink.strIngredient8 + ", "
         }
 
-        if (drink.strIngredient10 && drink.strMeasure10) {
-          ingredientsString += drink.strMeasure10 + " " + drink.strIngredient10 + ", " 
+        if (drink.strMeasure9) {
+          ingredientsString += drink.strMeasure9 + " "
+        };
+
+        if (drink.strIngredient9) {
+          ingredientsString += drink.strIngredient9 + ", "
         }
+
+        if (drink.strMeasure10) {
+          ingredientsString += drink.strMeasure10 + " "
+        };
+
+        if (drink.strIngredient10) {
+          ingredientsString += drink.strIngredient10 + ", "
+        }
+
+        ingredientsString = ingredientsString.slice(0, -2);
 
         return ({
 
         drinkId: drink.idDrink,
         title: drink.strDrink,
         ingredients: ingredientsString,
-
-                    //  drink.strMeasure1 + " " + drink.strIngredient1 + ", " +
-                    //  drink.strMeasure2 + " " + drink.strIngredient2 + ", " + 
-                    //  drink.strMeasure3 + " " + drink.strIngredient3 + ", " +
-                    //  drink.strMeasure4 + " " + drink.strIngredient4 + ", " +
-                    //  drink.strMeasure5 + " " + drink.strIngredient5 + ", " +
-                    //  drink.strMeasure6 + " " + drink.strIngredient6 + ", " +
-                    //  drink.strMeasure7 + " " + drink.strIngredient7 + ", " +
-                    //  drink.strMeasure8 + " " + drink.strIngredient8 + ", " +
-                    //  drink.strMeasure9 + " " + drink.strIngredient9 + ", " +
-                    //  drink.strMeasure10 + " " + drink.strIngredient10 || '',
-        
         instructions: drink.strInstructions,
         image: drink.strDrinkThumb || '',
       })});
@@ -147,7 +177,7 @@ const SearchDrinks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-dark'>
+      <Jumbotron fluid className='text-light bg-dark jumbo'>
         <Container>
           <h1>Search for Drinks!</h1>
           <Form onSubmit={handleFormSubmit}>
@@ -172,8 +202,8 @@ const SearchDrinks = () => {
         </Container>
       </Jumbotron>
 
-      <Container>
-        <h2>
+      <Container className='searchBegin'>
+        <h2 style={{color: 'white'}}>
           {searchedDrinks.length
             ? `Viewing ${searchedDrinks.length} results:`
             : 'Search for a drink to begin'}

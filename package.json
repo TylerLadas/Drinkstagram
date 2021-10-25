@@ -17,7 +17,8 @@
   "license": "ISC",
   "devDependencies": {
     "babel-plugin-import-graphql": "^2.8.1",
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "webpack-pwa-manifest": "^4.3.0"
   },
   "dependencies": {
     "if-env": "^1.0.4",

@@ -31,18 +31,10 @@ We have the solution! Drinkstagram is a convenient and user friendly application
 
 ## Technologies Used
  			
--React
--MongoDB
--Node.js
--Express				
--Graphql
--apollo/client
--Jwt-decode			
--React-dom	
--Mongoose	
--Bcrypt
--Apollo-server-express	
--If-env
+![Language](https://img.shields.io/badge/MongoDB-green.svg "Language Badge")
+![Language](https://img.shields.io/badge/Express-blue.svg "Language Badge")
+![Language](https://img.shields.io/badge/REACT-yellow.svg "Language Badge")
+![Language](https://img.shields.io/badge/Node-orange.svg "Language Badge")
 
 ## Installation
 

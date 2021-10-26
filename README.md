@@ -1,4 +1,4 @@
-# Group Project 3 MERN Drinkstagram APP
+# Drinkstagram
 
 ![License](https://img.shields.io/badge/License-MIT-<blue>)
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-
+A MERN PWA that allows a user to search for cocktails by name or ingredients and then save their favorite recipes to the dashboard.
 
 ## Table of Contents
 

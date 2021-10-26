@@ -20,6 +20,9 @@ const AppNavbar = () => {
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
+              <Nav.Link as={Link} to='/book' style={{color: 'white'}}>
+                Recipe Book
+              </Nav.Link>
               <Nav.Link as={Link} to='/' style={{color: 'white'}}>
                 Search For Drinks
               </Nav.Link>

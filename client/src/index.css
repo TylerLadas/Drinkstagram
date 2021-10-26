@@ -116,6 +116,18 @@ button:active {
 }
 
 img {
-  width: 100%;
+  width: 50%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.donate {
+  background-color: #93332f;
+  border: black 1px solid;
+  width: fit-content;
+  color: white;
+  margin: 20px 0px;
 }

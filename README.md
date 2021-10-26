@@ -10,9 +10,9 @@ A MERN PWA that allows a user to search for cocktails by name or ingredients and
 
 ## Table of Contents
 
-* [User Story](#userStory)
+* [User Story](#user)
 
-* [Technologies Used](#technologiesUsed)
+* [Technologies Used](#technologies)
 
 * [Installation](#installation)
 

@@ -35,6 +35,15 @@ We have the solution! Drinkstagram is a convenient and user friendly application
 ![Language](https://img.shields.io/badge/Express-blue.svg "Language Badge")
 ![Language](https://img.shields.io/badge/REACT-yellow.svg "Language Badge")
 ![Language](https://img.shields.io/badge/Node-orange.svg "Language Badge")
+![Language](https://img.shields.io/badge/CSS-purple.svg "Language Badge")
+![Language](https://img.shields.io/badge/HTML-red.svg "Language Badge")
+![Language](https://img.shields.io/badge/JavaScript-green.svg "Language Badge")
+
+-apollo/client<br>	-React<br>
+-<br>					Graphql for queries to API<br>	
+Jwt-decode for JSON web tokens<br>				React-dom for updating DOM<br>	
+mongoose for MongoDB manipulation<br>		Bcrypt for password for hashing<br>
+Apollo-server-express for server development<br>		If-env for .env files<br>
 
 ## Installation
 

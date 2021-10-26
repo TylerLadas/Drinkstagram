@@ -10,6 +10,8 @@ A MERN PWA that allows a user to search for cocktails by name or ingredients and
 
 ## Table of Contents
 
+* [User Story](#UserStory)
+
 * [Technologies Used](#TechnologiesUsed)
 
 * [Installation](#installation)
@@ -21,6 +23,11 @@ A MERN PWA that allows a user to search for cocktails by name or ingredients and
 * [Contributing](#contributing)
 
 * [Questions](#questions)
+
+## User Story
+Have you ever been out with friends and look over at the next table, and see that colourful and tasty drink?  
+Or have you ever ordered a cocktail, and the bartender doesn’t know how to make it? 
+We have the solution! Drinkstagram is a convenient and user friendly application right at your fingertips.
 
 ## Technologies Used
  

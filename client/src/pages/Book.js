@@ -18,7 +18,7 @@ function Book() {
 					<h3>$20.00</h3>
 					<img src={bookImg} alt='Book' />
 					<button 
-					className='btn btn-success' 
+					className="btn mx-auto d-block donate" 
 					onClick={() => setShowItem(true)}>Purchase Drinkstagram Book</button>
 				</>
 			)}

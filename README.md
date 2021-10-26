@@ -26,8 +26,9 @@ Apollo-server-express for server development<br>		If-env for .env files<br>
 
 ## The Repositories
 
-- Heroku https://nameless-spire-26834.herokuapp.com/- Project Repo https://github.com/TylerLadas/Drinkstagram.git
-  https://github.com/TylerLadas
-  https://github.com/scottskinn
-  https://github.com/yussefrafat
-  https://github.com/jlhickey
+- Heroku https://nameless-spire-26834.herokuapp.com/<br>
+- Project Repo https://github.com/TylerLadas/Drinkstagram.git<br>
+  https://github.com/TylerLadas<br>
+  https://github.com/scottskinn<br>
+  https://github.com/yussefrafat<br>
+  https://github.com/jlhickey<br>

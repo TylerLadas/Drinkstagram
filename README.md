@@ -43,6 +43,7 @@ We have the solution! Drinkstagram is a convenient and user friendly application
 ![Language](https://img.shields.io/badge/JWT-orange.svg "Language Badge")
 ![Language](https://img.shields.io/badge/Bcrypt-purple.svg "Language Badge")
 ![Language](https://img.shields.io/badge/Mongoose-red.svg "Language Badge")
+![Language](https://img.shields.io/badge/Bootstrap-green.svg "Language Badge")
 
 ## Installation
 

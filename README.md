@@ -30,12 +30,19 @@ Or have you ever ordered a cocktail, and the bartender doesn’t know how to mak
 We have the solution! Drinkstagram is a convenient and user friendly application right at your fingertips.
 
 ## Technologies Used
- 
-apollo/client for handling data with graphql<br>			React for front end development<br>
-express for server side dev<br>					Graphql for queries to API<br>	
-Jwt-decode for JSON web tokens<br>				React-dom for updating DOM<br>	
-mongoose for MongoDB manipulation<br>		Bcrypt for password for hashing<br>
-Apollo-server-express for server development<br>		If-env for .env files<br>
+ 			
+-React
+-MongoDB
+-Node.js
+-Express				
+-Graphql
+-apollo/client
+-Jwt-decode			
+-React-dom	
+-Mongoose	
+-Bcrypt
+-Apollo-server-express	
+-If-env
 
 ## Installation
 

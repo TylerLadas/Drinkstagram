@@ -1,12 +1,6 @@
 {
   "short_name": "Drinks",
   "name": "Drinkstagram",
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "display": "standalone",
-  "prefer_related_applications ": "true",
-  "start_url": "./index.html",
-  "scope": "./index.html",
   "icons": [
     {
       "src": "favicon.ico",
@@ -29,5 +23,11 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ]
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "prefer_related_applications ": "true",
+  "start_url": "/",
+  "scope": "/"
 }

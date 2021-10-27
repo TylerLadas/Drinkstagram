@@ -32,7 +32,7 @@ const BuyButton = ({ itemID, ammount }) => {
 			});
 		};
 	return (
-		<>
+
 		<div className='book'>
 			<h1>The Drinkstagram Book</h1>
 			<p>A collection of our most popular cocktails!</p>
@@ -43,7 +43,7 @@ const BuyButton = ({ itemID, ammount }) => {
 						onClick={handleClick}
 						>Purchase Drinkstagram Book</button>
 		</div>
-</>
+
 	);
 }
 

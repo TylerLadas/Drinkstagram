@@ -6,6 +6,7 @@ import { setContext } from '@apollo/client/link/context';
 
 import SearchDrinks from './pages/SearchDrinks';
 import SavedDrinks from './pages/SavedDrinks';
+import Book from './pages/Book'
 import Navbar from './components/Navbar';
 
 // create apollo provider
@@ -38,6 +39,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={SearchDrinks} />
             <Route exact path='/saved' component={SavedDrinks} />
+            <Route exact path='/book' component={Book} />
             <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
           </Switch>
         </>

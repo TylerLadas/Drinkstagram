@@ -32,8 +32,9 @@ const BuyButton = ({ itemID, ammount }) => {
 			});
 		};
 	return (
-		<div>
+		<div className='book'>
 			<h1>The Drinkstagram Book</h1>
+			<p>A collection of our most popular cocktails!</p>
 					<h3>$20.00</h3>
 					<img src={bookImg} alt='Book' />
 					<button
@@ -49,8 +50,8 @@ export default function App() {
 	  <>
 		<div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none donate-div">
 		  <BuyButton
-			ammount={"5.00"}
-			itemID="price_1JoUwpH60lKUSgoQTRUYtFsM"
+			ammount={"20.00"}
+			itemID="price_1JpFaEH60lKUSgoQkjClaDVT"
 		  ></BuyButton>
 		</div>
 	  </>

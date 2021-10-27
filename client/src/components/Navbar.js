@@ -21,16 +21,16 @@ const AppNavbar = () => {
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
               <Nav.Link as={Link} to='/book' style={{color: 'white'}}>
-                Recipe Book
+                Buy Book
               </Nav.Link>
               <Nav.Link as={Link} to='/' style={{color: 'white'}}>
-                Search For Drinks
+                Search
               </Nav.Link>
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
                   <Nav.Link as={Link} to='/saved' style={{color: 'white'}}>
-                    See Your Drinks
+                    My Bar
                   </Nav.Link>
                   <Nav.Link onClick={Auth.logout} style={{color: 'white'}}>Logout</Nav.Link>
                 </>

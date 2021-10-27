@@ -2,28 +2,57 @@ import { useState } from 'react';
 import React from 'react';
 import { Button } from 'react-bootstrap';
 // import './App.css';
-import StripeContainer from '../components/StripeContainer';
+// import StripeContainer from '../components/StripeContainer';
 import bookImg from '../assets/cocktail.jpeg'
+import { loadStripe } from "@stripe/stripe-js";
+const stripePromise = loadStripe(
+  "pk_test_51JoUw3H60lKUSgoQn6tn6tGv8Xpnr08lCyY3TDtiNDqPY3FFS51W23oj2GG4Z1pUkl8CHeLGH1FYBnyFXGWbDThI00h2tukjnq"
+);
 
 
-function Book() {
-	const [showItem, setShowItem] = useState(false);
+// function Book() {
+// 	const [showItem, setShowItem] = useState(false);
+
+const BuyButton = ({ itemID, ammount }) => {
+	const handleClick = async (event) => {
+		const stripe = await stripePromise;
+	  
+		  stripe
+			.redirectToCheckout({
+			  lineItems: [{ price: itemID, quantity: 1 }],
+			  mode: "payment",
+			  successUrl: window.location.protocol + "//nameless-spire-26834.herokuapp.com/",
+			  cancelUrl: window.location.protocol + "//nameless-spire-26834.herokuapp.com/",
+			//   submitType: "donate"
+			})
+			.then(function (result) {
+			  if (result.error) {
+				console.log(result);
+			  }
+			});
+		};
 	return (
-		<div className='App'>
+		<div>
 			<h1>The Drinkstagram Book</h1>
-			{showItem ? (
-				<StripeContainer />
-			) : (
-				<>
 					<h3>$20.00</h3>
 					<img src={bookImg} alt='Book' />
-					<button 
-					className="btn mx-auto d-block donate" 
-					onClick={() => setShowItem(true)}>Purchase Drinkstagram Book</button>
-				</>
-			)}
+					<button
+						className="btn mx-auto d-block donate"
+						onClick={handleClick}
+						>Purchase Drinkstagram Book</button>
 		</div>
 	);
 }
 
-export default Book;
+export default function App() {
+	return (
+	  <>
+		<div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none donate-div">
+		  <BuyButton
+			ammount={"5.00"}
+			itemID="price_1JoUwpH60lKUSgoQTRUYtFsM"
+		  ></BuyButton>
+		</div>
+	  </>
+	);
+  }
